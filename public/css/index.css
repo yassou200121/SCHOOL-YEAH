@@ -1,0 +1,204 @@
+@font-face
+{
+	font-family: "Bloomer";
+	src: url("../font/Bloomer.otf") format("opentype");
+}
+
+@font-face
+{
+	font-family: "Arrow";
+	src: url("../font/Arrow Symbols 1.ttf");
+}
+
+body
+{
+    background-color: rgb(40, 41, 35) !important;
+    overflow: hidden;
+}
+
+.startContent
+{
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+}
+
+.startContent h1
+{
+    display: block;
+    font-family: "Bloomer";
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20%;
+    width: fit-content;
+    font-size: 60px;
+    color: orange;
+    -webkit-user-select: none;    
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+h1 span
+{
+	display: inline-block;
+	-webkit-user-select: none;    
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.bloomer
+{
+	font-family: "Bloomer";
+}
+
+.content
+{
+	opacity: 0;
+}
+
+.navbar-brand, .nav-link, .navbar
+{
+	color: orange !important;
+}
+
+.slide
+{
+	visibility: hidden;
+	width: fit-content;
+	margin-top: 20%;
+}
+
+#s0, #s1, #s2
+{
+	position: relative;
+}
+
+#s0.slide
+{
+	visibility: visible;
+}
+
+.flex-column
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.slide label
+{
+	color: orange;
+	font-size: 40px;
+}
+
+.arrowButton
+{
+	font-family: "Arrow";
+    color: orange;
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: white;
+    width: 45px;
+    cursor: pointer;
+}
+
+.slide input
+{
+	width: 80%;
+	border: solid 3px #ff9a22;
+	padding-left: 10px;
+}
+
+.flex
+{
+	display: flex;
+}
+
+.ml-auto
+{
+	margin-left: auto;
+}
+
+.mr-auto
+{
+	margin-right: auto;
+}
+
+.asterix
+{
+	color: orange;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.cityDropdown
+{
+	display: none;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(40, 41, 35);
+    color: orange;
+    margin: auto;
+    top: 130px;
+    bottom: 0;
+    width: 80%;
+    z-index: 99;
+}
+
+.suggestion
+{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 70px;
+	background-color: #2d2d2d;
+	color: orange;
+	padding: 0 20px 0 20px;
+	cursor: pointer;
+}
+
+.suggestionTitle
+{
+	height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+	font-size: 20px;
+}
+
+.circleValidation
+{
+	width: 30px;
+	height: 30px;
+	margin-top: auto;
+	margin-bottom: auto;
+	border: solid 2px orange;
+	border-radius: 40px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.valid-icon
+{
+	opacity: 0;
+	margin-top: 7px;
+}
+
+.etablissementDropdown
+{
+	display: none;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(40, 41, 35);
+    color: orange;
+    margin: auto;
+    top: 130px;
+    bottom: 0;
+    width: 80%;
+    z-index: 99;
+}

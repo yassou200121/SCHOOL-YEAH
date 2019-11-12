@@ -1,0 +1,70 @@
+<style type="text/css">
+	
+	body
+	{
+		background-color: rgb(40, 41, 35);
+		color: orange;
+	}
+
+	.cityDropdown
+	{
+		display: flex;
+		flex-direction: column;flex-wrap: wrap;
+		position: absolute;
+		background-color: rgb(40, 41, 35);
+		color: orange;
+		margin: auto;
+		top: 0; left: 0; bottom: 0; right: 0;
+		border: solid 2px white;
+		width: 800px;
+		height: 400px;
+	}
+
+	.citySuggestion
+	{
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: space-between;
+		height: 70px;
+		background-color: #2d2d2d;
+		color: orange;
+		padding: 0 20px 0 20px;
+	}
+
+	.suggestionTitle
+	{
+		line-height: 50%;
+		font-size: 30px;
+	}
+
+	.circleValidation
+	{
+		width: 30px;
+		height: 30px;
+		margin-top: auto;
+		margin-bottom: auto;
+		border: solid 2px orange;
+		border-radius: 40px;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.valid-icon
+	{
+		opacity: 0;
+		margin-top: 7px;
+	}
+
+</style>
+<link rel="stylesheet" type="text/css" href="public/css/fontawesome/css/all.css">
+<body>
+	<div class="cityDropdown">
+		<div class="citySuggestion">
+			<p class="suggestionTitle">Dijon</p>
+			<div class="circleValidation">
+				<i class="fas fa-check valid-icon"></i>
+			</div>
+		</div>
+	</div>
+</body>

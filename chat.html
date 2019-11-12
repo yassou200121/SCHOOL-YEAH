@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>School Yeah</title>
+		<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/chat.css">
+		<link rel="stylesheet" type="text/css" href="css/fontawesome/css/fontawesome.min.css">
+		<script src="https://kit.fontawesome.com/d5d500c2d6.js"></script>
+	</head>
+	<body>
+		<h1 class="bloomer">Discussion</h1>
+
+		<div class="chatContainer">
+			<div class="listView">
+				<div class="searchBar">
+					<input type="text" id="searchChat" placeholder="Rechercher une discussion" autofocus>
+				</div>
+
+				<div class="listContainer">
+					
+				</div>
+			</div>
+
+			<div class="border"></div>
+
+			<div class="chatView">
+				<div class="chatViewIn">
+					<h2 class="chatName">Maxime</h2>
+
+					<div class="messageView">
+						<div class="callBar">
+							<i class="fas fa-phone" id="phoneCallButton"></i>
+							<i class="fas fa-video" id="videoCallButton"></i>
+						</div>
+
+						<div class="messageContainer">
+							<p class="select-friend">Sélectionner un ami pour pouvoir parler avec lui !</p>
+						</div>
+					</div>
+
+					<div class="fileBar">
+						
+					</div>
+
+					<div class="messageBar">
+						<div class="pictureButton">
+							<input type="file" class="fileInput" id="fileInput" accept="image/*, video/*, .rar, .zip" multiple>
+						</div>
+
+						<div class="inputBlock">
+							<input type="text" class="messageInput" placeholder="Dites bonjour a Maxime...">
+							<button class="sendButton">Envoyer</button>
+						</div>
+
+						<div class="stickerButton"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script src="/siofu/client.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.webcam.min.js"></script>
+		<script type="text/javascript" src="../js/chat.js"></script>
+	</body>
+</html>

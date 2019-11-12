@@ -1,0 +1,306 @@
+@font-face
+{
+	font-family: "Bloomer";
+	src: url("../font/Bloomer.otf") format("opentype");
+}
+
+@font-face
+{
+	font-family: "Arrow";
+	src: url("../font/Arrow Symbols 1.ttf");
+}
+
+body
+{
+    background-color: rgb(40, 41, 35) !important;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content
+{
+	width: 100%;
+	height: 100%;
+	min-width: 1000px;
+	min-height: 500px;
+	display: flex;
+}
+
+.bloomer
+{
+	font-family: "Bloomer";
+}
+
+.arrow
+{
+	font-family: "Arrow";
+}
+
+button:focus {outline:0;}
+input:focus {outline: 0;}
+
+.left-part
+{
+	width: 20%;
+	height: 100%;
+	border-right: solid 2px orange;
+	padding-top: 40px;
+	z-index: 9;
+	background-color: rgb(40, 41, 35) !important;
+}
+
+.right-part
+{
+	width: 80%;
+	height: 100%;
+	padding-top: 20px;
+	background-color: rgb(40, 41, 35) !important;
+}
+
+h1
+{
+	width: fit-content;
+	margin: 0 auto;
+	color: orange;
+	font-size: 50px;
+	letter-spacing: 1.50px;
+}
+
+#search-input
+{
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: 32px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: solid 3px orange;
+	border-radius: 10px;
+	text-overflow: ellipsis;
+}
+
+#search-input::placeholder
+{
+	color: black;
+}
+
+.appBoxContainer
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 75%;
+	min-height: 400px;
+	min-width: 700px;
+	justify-content: space-around;
+
+	margin-top: 80px;
+}
+
+.app
+{
+	position: relative;
+	width: 275px;
+	height: 200px;
+	border: solid 2px orange;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.app h3
+{
+	width: 100%;
+	height: 15%;
+	text-align: center;
+	color: orange;
+}
+
+.app iframe
+{
+	display: block;
+	width: 95%;
+	height: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+	border: 0px solid black;
+	border-radius: 5px;
+}
+
+.app button
+{
+	position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #1a1b17;
+    color: #4da6ff;
+    border: solid 1px #4da6ff;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    font-size: 20px;
+}
+
+.app .description
+{
+	margin-top: 10px;
+	color: orange;
+}
+
+.profilAppButton
+{
+    width: 75px;
+    height: 75px;
+}
+
+.profilAppButton .profilImage
+{
+	width: 100%;
+	height: 100%; 
+	background-image: url("../img/avatar.png") !important;
+    background-size: 100% 100%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.align-center
+{
+	text-align: center;
+}
+
+#return-back
+{
+	width: 0px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url(../img/retour.png);
+    background-size: 100% 100%;
+    opacity: 0;
+}
+
+#returnContainer
+{
+	display: none;
+	flex-direction: row;
+	color: orange;
+	justify-content: space-around;
+	position: absolute;
+    top: 38px;
+    left: 50px;
+	width: 110px;
+	height: 40px;
+    line-height: 2.5;
+    cursor: pointer;
+}
+
+#returnContainer p
+{
+    margin: 0;
+}
+
+.searchItem
+{
+	height: 70px !important;
+	width: 100%;
+	background-color: rgb(40, 41, 35);
+	border-bottom: solid 2px orange;
+	display: flex;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.photoContainer
+{
+	display: block;
+	width: 70px;
+	height: 100%;
+}
+
+.photoContainer .photo
+{
+	display: block;
+	width: 80%;
+	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	border-radius: 70px;
+	border: solid 1px orange;
+}
+
+.infoContainer
+{
+	height: 100%;
+	width: 70%;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.infoContainer .name-info
+{
+	display: block;
+	font-size: 24px;
+	color: orange;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.infoContainer .other-info
+{
+	display: block;
+	font-size: 14px;
+	color: rgb(77, 166, 255);;
+	margin-bottom: 0px;
+}
+
+.followButtonContainer
+{
+	width: 20%;
+	height: 100%;
+	margin-left: auto;
+	position: relative;
+}
+
+.followButton
+{
+	position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #1a1b17;
+    color: #4da6ff;
+    border: solid 1px #4da6ff;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.resultSearchDiv
+{
+	display: none;
+	flex-direction: column;
+	flex-wrap: wrap;
+	overflow: auto;
+	height: 80vh;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}

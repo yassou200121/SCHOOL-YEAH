@@ -1,0 +1,97 @@
+<h1 class="bloomer">SCHOOL YEAH Chat</h1>
+
+<div class="chatContainer">
+	<div class="listView">
+		<div class="searchBar">
+			<input type="text" id="searchChat" placeholder="Rechercher une discussion" autofocus>
+		</div>
+	</div>
+	<div class="chatView">
+		<div class="border">
+		</div>
+		<div class="nameBar">
+			<h2>Maxime</h2>
+		</div>
+
+		<div class="messageView">
+			
+		</div>
+	</div>
+</div>
+
+
+<style type="text/css">
+	body { background-color: rgb(40, 41, 35); color: orange; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";} @font-face { font-family: "Bloomer"; src: url("public/font/Bloomer.otf") format("opentype"); } @font-face { font-family: "Arrow"; src: url("public/font/Arrow Symbols 1.ttf"); } body { background-color: rgb(40, 41, 35) !important; width: 100%; height: 100vh; overflow: hidden; } .content { width: 100%; height: 100%; min-width: 1000px; min-height: 500px; display: flex; } .bloomer { font-family: "Bloomer"; } h1 { width: fit-content; margin: 0 auto; color: orange; font-size: 50px; letter-spacing: 1.50px; height: 15%;}
+
+	.chatContainer
+	{
+		width: 100%;
+		height: 85%;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.listView
+	{
+		width: 20%;
+		height: 100%;
+		border-right: solid 3px orange;
+	}
+
+	.chatView
+	{
+		width: 80%;
+		height: 100%;
+		border-right: 2px solid orange;
+		position: relative;
+	}
+
+	.searchBar
+	{
+		-webkit-clip-path: polygon(0% 100%, 10% 0%, 90% 0%, 100% 100%);
+		background-color: blue;
+		height: 6%;
+	}
+
+	.searchBar input
+	{
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding-left: 10%;
+		outline: none;
+	}
+
+	.nameBar
+	{
+		-webkit-clip-path: polygon(0% 100%, 33% 100%, 40% 0%, 59% 0%, 66% 100% );
+		clip-path: polygon(0% 100%, 33% 100%, 40% 0%, 59% 0%, 66% 100% );
+		background-color: rgb(40, 41, 35);
+		height: 6%;
+		z-index: 9;
+		border-top: solid 2px orange;
+	}
+
+	.nameBar h2
+	{
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	}
+
+	.messageView
+	{
+		border: solid 3px orange;
+	}
+
+	.border
+	{
+		position: absolute;
+		-webkit-clip-path: polygon(32% 100%, 39% 0%, 60% 0%, 67% 100% );
+		clip-path: polygon(32% 100%, 39% 0%, 60% 0%, 67% 100% );
+		background-color: orange;
+		z-index: -1;
+		width: 100%;
+		height: 6%;
+	}
+</style>

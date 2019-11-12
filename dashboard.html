@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>School Yeah</title>
+		<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+	</head>
+	<body>
+		<div class="content">
+			<div class="left-part">
+				<input type="text" id="search-input" placeholder="Rechercher un lycée, une personne, un lieu...">
+				<div class="flex" id="returnContainer">
+					<div id="return-back"></div>
+					<p>Retour</p>
+				</div>
+				<div class="resultSearchDiv">
+						
+				</div>
+			</div>
+			<div class="right-part">
+				<h1 class="bloomer">SCHOOL YEAH</h1>
+				<div class="appBoxContainer">
+					<div class="app" onclick="document.location.href = '/chat'">
+						<h3>Chat</h3>
+						<p class="description">Conversation avec vos amis, votre classe...</p>
+						<button>Aller <span class="arrow">V</span></button>
+					</div>
+					<div class="app">
+						<h3>Explorer</h3>
+						<p class="description">Découvrez de nouvelles personnes d'autres lycées...</p>
+						<button>Aller <span class="arrow">V</span></button>
+					</div>
+					<div class="app">
+						<h3>Fil d'actualité</h3>
+						<p class="description">Soyez au courant des actualités de votre lycée et de vos amis.</p>
+						<button>Aller <span class="arrow">V</span></button>
+					</div>
+					<div class="app">
+						<h3>Profil</h3>
+						<p class="description align-center">Modifier votre profil</p>
+						<button class="profilAppButton"><div class="profilImage"></div></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="/js/searchItem.js"></script>
+		<script type="text/javascript" src="/js/dashboard.js"></script>
+	</body>
+</html>
